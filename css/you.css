@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: white;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none; 
+}
+
+/* navigation */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
+  height: 56px;
+  background-color: #0f0f0f;
+}
+
+
+.left-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.left-nav i {
+  font-size: 20px;
+}
+
+.left-nav i:hover {
+  cursor: pointer;
+}
+
+.logo-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.logo-nav img {
+  width: 100%;
+  height: 40px;
+  object-fit: contain;
+}
+
+.middle-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.middle-nav {
+  align-items: center;
+}
+
+.middle-nav input {
+  width: 580px;
+  height: 32px;
+  padding-left: 10px;
+  background-color: #0f0f0f;
+  border: 1px solid lightgrey;
+  border-radius: 30px;
+  color: white ;
+}
+
+.middle-nav i {
+  font-size: 20px;
+}
+
+.middle-nav i:hover {
+  cursor: pointer;
+}
+
+.search i {
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 10px;
+}
+
+.middle-nav i {
+  font-size: 20px;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.right-nav i {
+  font-size: 20px;
+}
+
+.right-nav i:hover {
+  cursor: pointer;
+}
+
+.right-nav img {
+  width: 35px;
+  height: 35px;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* main */
+
+.side-nav {
+  position: fixed;
+  top: 60px;
+  width: 65px;
+  height: calc(100vh - 60px);
+  text-align: center;
+  padding-left: 5px;
+}
+
+.side-nav .home {
+    padding-top: 20px;
+margin-bottom: 40px;
+}
+
+.side-nav .home a{
+  text-decoration: none;
+  color: white;
+ }
+
+.side-nav .home i {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.side-nav .home p {
+    font-size: 10px;
+}
+
+.side-nav .shorts {
+    margin-bottom: 40px;
+}
+
+.side-nav .shorts  a{
+ text-decoration: none;
+ color: white;
+}
+
+.side-nav .shorts i {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.side-nav .shorts p {
+    font-size: 10px;
+}
+
+.side-nav .subscriber {
+    margin-bottom: 40px;
+}
+
+.side-nav .subscriber a {
+  text-decoration: none;
+  color: white;
+}
+
+.side-nav .subscriber i {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.side-nav .subscriber p {
+    font-size: 10px;
+}
+
+.side-nav .you {
+    margin-bottom: 40px;
+}
+
+.side-nav .you a {
+  text-decoration: none;
+  color: white;
+}
+
+.side-nav .you i {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.side-nav .you p {
+    font-size: 10px;
+}
+
+/* main */
+
+.container1 {
+  margin-left: 110px;
+  margin-top: 60px;
+}
+
+.library {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 460px;
+  height: 140px;
+  margin-top: 20px;
+}
+
+.library .img img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+}
+
+.library .name {
+  width: 400px;
+  height: 140px;
+  margin-left: 10px;
+}
+
+.library .name h3 {
+  font-size: 34px;
+}
+
+.library .name .btn {
+  padding-top: 10px;
+
+}
+
+.library .name .btn i{
+  padding-right: 5px;
+}
+
+.library .name .btn button {
+width: 130px;
+height: 30px;
+border-radius: 20px;
+border: 0;
+margin-top: 10px;
+background-color: #343434;
+color: white;
+}
+
+.library .name .btn button:hover{
+  cursor: pointer;
+  background-color: #3f3f3f;
+}
+
+.history {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1100px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.history .v button {
+  border: 1px solid grey;
+  width: 75px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #0f0f0f;
+  color: white;
+}
+
+.history .v button:hover {
+  border: 0;
+  background-color: #3f3f3f ;
+}
+
+.videos {
+  margin-left: 110px;
+  height: 230px;
+  display: flex;
+  gap: 10px;
+  width: 1080px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+}
+
+.videos::-webkit-scrollbar {
+  display: none; 
+}
+
+.v1 {
+  height: 200px;
+}
+
+.v1 a {
+  text-decoration: none;
+  color: white;
+}
+
+.v1 img {
+  width: 220px;
+}
+
+.footer {
+  margin-left: 110px;
+  margin-top: 10px;
+}
